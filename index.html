@@ -8,6 +8,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="./js/index.js">
+
+  </script>
+
 
   <title>Suhan</title>
 
@@ -37,30 +43,42 @@
                 <h3 class="masthead-brand">Hello!</h3>
                 <nav>
                   <ul class="nav masthead-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a class="abuttons" data-divid="home" href="#">Home</a></li>
+                    <li class="active"><a class="abuttons" data-divid="projects" href="#projects">Projects</a></li>
+
                     <!--<li><a href="#">Contact</a></li>-->
                   </ul>
                 </nav>
               </div>
             </div>
 
-            <div class="inner cover">
-              <h1 class="cover-heading">Suhan Koh</h1>
-              <p class="lead">Hello there! This site is still under contruction, but you can reach me via my resume or linkedin!</p>
-              <p class="lead">
-                <form method="get" action="./files/Resume.pdf">
-                  <button href="#" class="btn btn-lg btn-default">Download Résumé</button>
-                </form>
-              </p>
-            </div>
+            <div id="contents">
+              <div id="home" class="inner cover" >
+                <h1 class="cover-heading">Suhan Koh</h1>
+                <p class="lead">Hello there! This site is still under contruction, but you can reach me via my resume or linkedin!</p>
+                <p class="lead">
+                  <form method="get" action="./files/Resume.pdf">
+                    <button href="#" class="btn btn-lg btn-default">Download Résumé</button>
+                  </form>
+                </p>
 
-            <div class="mastfoot">
-              <div class="inner">
-                <p>
+                <p >
                   <a href="http://linkedin.com/in/suhankoh" class="btn btn-lg btn-default"><i class="iconLinkedin"></i>LinkedIn</a> 
                   <a href="https://github.com/suhankoh" class="btn btn-lg btn-default"><i class="iconGithub"></i>Github</a>
                 </p>
+
               </div>
+
+              <div id="projects" class="inner cover" style="display:none">
+                <p>Project 1</p>            
+                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p1" width="200" height="200"> 
+                <p>Project 2</p>            
+                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p2" width="200" height="200"> 
+                <p>Project 3</p>            
+                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p3" width="200" height="200"> 
+
+              </div>
+
             </div>
 
           </div>
@@ -73,9 +91,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

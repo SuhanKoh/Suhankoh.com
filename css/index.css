@@ -1,4 +1,13 @@
 #container{
-   margin: 0 auto;
-   max-width: 1200px;
+ margin: 0 auto;
+ max-width: 1200px;
+}
+
+.transparent {
+  padding:25px;
+  border-radius: 10px;
+  display:none;
+  background:#7f7f7f;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }

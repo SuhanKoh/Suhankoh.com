@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="SuhanProject">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,11 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
-  <script src="./js/index.js">
-
-  </script>
+  <script src="./js/index.js"></script>
+  <script src="./js/angularControllers/projects.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
 
 
   <title>Suhan</title>
@@ -69,14 +70,12 @@
 
               </div>
 
-              <div id="projects" class="inner cover" style="display:none">
-                <p>Project 1</p>            
-                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p1" width="200" height="200"> 
-                <p>Project 2</p>            
-                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p2" width="200" height="200"> 
-                <p>Project 3</p>            
-                <img src="./css/images/projects/sample.jpg" class="img-circle" alt="p3" width="200" height="200"> 
-
+              <div id="projects" class="transparent" ng-controller="ProjectController">
+                <div class="col-sm-4" ng-repeat="product in products" style="display:inherit;">
+                  
+                  <p>{{product.name}}</p>            
+                  <img src={{product.image}} class="img-circle" alt="p1" width="200" height="200"> 
+                </div>
               </div>
 
             </div>

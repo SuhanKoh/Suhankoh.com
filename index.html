@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="SuhanProject">
+<html lang="en" ng-app="SuhanProjects">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,11 +70,11 @@
 
               </div>
 
-              <div id="projects" class="transparent" ng-controller="ProjectController">
-                <div class="col-sm-4" ng-repeat="product in products" style="display:inherit;">
-                  
-                  <p>{{product.name}}</p>            
-                  <img src={{product.image}} class="img-circle" alt="p1" width="200" height="200"> 
+              <!-- Involving Angular apis that scale all my projects -->
+              <div id="projects" class="transparent" ng-controller="ProjectController as projController">
+                <div class="col-sm-4" ng-repeat="project in projController.projects" style="display:inherit;">
+                  <p class="">{{project.name}}</p>            
+                  <img src={{project.image}} class="img-circle" alt="p1" width="200" height="200"> 
                 </div>
               </div>
 

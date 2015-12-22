@@ -4,10 +4,14 @@
 }
 
 .transparent {
-  padding:25px;
+  padding: 25px;
   border-radius: 10px;
   display:none;
   background:#7f7f7f;
   background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
+}
+
+.projects {
+  padding: 25px !important;
 }

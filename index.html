@@ -74,7 +74,10 @@
               <div id="projects" class="transparent" ng-controller="ProjectController as projController">
                 <div class="col-sm-4" ng-repeat="project in projController.projects" style="display:inherit;">
                   <p class="">{{project.name}}</p>            
-                  <img src={{project.image}} class="img-circle" alt="p1" width="200" height="200"> 
+                  <a href="http://www.w3.org" class="highlightit">
+                    <img src={{project.image}} class="img-circle" alt="p1" width="200" height="200"> 
+                  </a>
+                  
                 </div>
               </div>
 

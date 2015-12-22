@@ -15,3 +15,8 @@
 .projects {
   padding: 25px !important;
 }
+
+.highlightit:hover img{
+  border: 2px solid yellow;
+}
+

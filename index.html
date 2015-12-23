@@ -14,6 +14,7 @@
   <script src="./js/index.js"></script>
   <script src="./js/angularControllers/projects.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link href="./css/ihover.min.css" rel="stylesheet">
 
 
   <title>Suhan</title>
@@ -71,13 +72,23 @@
               </div>
 
               <!-- Involving Angular apis that scale all my projects -->
-              <div id="projects" class="transparent" ng-controller="ProjectController as projController">
-                <div class="col-sm-4" ng-repeat="project in projController.projects" style="display:inherit;">
-                  <p class="">{{project.name}}</p>            
+              <div id="projects" class="row transparent" ng-controller="ProjectController as projController">
+                <div class="col-sm-4 rowsPadding" ng-repeat="project in projController.projects" style="display:inherit;">
+<!--                   <p class="">{{project.name}}</p>            
                   <a href="http://www.w3.org" class="highlightit">
                     <img src={{project.image}} class="img-circle" alt="p1" width="200" height="200"> 
                   </a>
-                  
+                -->                  
+                <div class="ih-item circle effect1"><a href="#">
+                  <div class="spinner"></div>
+                  <div class="img"><img src={{project.image}} alt="img"></div>
+                  <div class="info">
+                    <div class="info-back">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div>
+                  </div></a></div>
+
                 </div>
               </div>
 

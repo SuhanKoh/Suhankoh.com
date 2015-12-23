@@ -30,7 +30,12 @@
   border: 2px solid red;
 }
 
-.rowsPadding{
+.rows-padding{
   margin-top: 30px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+}
+
+.rows-padding.center-columns {
+  display: inline-block !important; 
+  float: none !important;
 }

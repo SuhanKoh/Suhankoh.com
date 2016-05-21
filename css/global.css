@@ -6,9 +6,13 @@ html, body {
 }
 
 .mdl-layout__content {
-  background: url(images/sf.jpg) center / cover;
+  /*background: url(images/sf.jpg) center / cover;*/
   /*background: url(images/sf_grey.jpg) center / cover;*/
   /*background: #757575;*/
+}
+
+.layout-transparent {
+  background: url(images/sf.jpg) center / cover;
 }
 
 .mdl-layout__drawer {
@@ -41,4 +45,24 @@ figure {
 figure img {
   max-height: 100%;
   max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  figure {
+    width: 200px;
+  }
+
+  .center{
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  figure {
+    float: none;
+    margin-bottom: 16px;
+    margin-top: 0;
+    width: auto;
+  }
+
 }

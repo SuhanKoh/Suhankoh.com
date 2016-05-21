@@ -33,9 +33,10 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
+  <div class="layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
       <div class="mdl-layout__header-row">
+
         <!-- Title -->
         <span class="mdl-layout-title">Suhan</span>
         <!-- Add spacer, to align navigation to the right -->
@@ -62,8 +63,8 @@
 
     <main class="mdl-layout__content">
       <!-- Resume section -->
-      <section class="mdl-layout__tab-panel is-active resume-card-content" id="resume">
-        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp center overflow-fab-button">
+      <section class="mdl-layout__tab-panel is-active center resume-card-content" id="resume">
+        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp overflow-fab-button">
           <a href="./files/Resume.pdf">
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
               <i class="material-icons">file_download</i>
@@ -119,7 +120,7 @@
       </section>
 
       <!-- Project section -->
-      <section class="mdl-layout__tab-panel" id="projects">
+      <section class="mdl-layout__tab-panel resume-card-content" id="projects">
         <div class="page-content">
 
           <div class="mdl-grid center">

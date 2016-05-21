@@ -8,6 +8,15 @@
   color: #fff;
 }
 
+/*.demo-layout-transparent {
+  background: url(images/sf.jpg) center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  /*color: white;*/
+
 .card-square > .mdl-card__supporting-text {
   font-size: 14px;
 }
@@ -37,4 +46,10 @@
   right: 28px;
   -webkit-transform: translate(0px, -28px);
   transform: translate(0px, -28px);
+}
+
+@media screen and (max-width: 850px) {
+  .resume-card-content {
+    padding: 80px 0px;
+  } 
 }

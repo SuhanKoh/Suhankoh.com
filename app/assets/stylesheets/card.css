@@ -1,0 +1,55 @@
+.card-square.mdl-card {
+/*  width: 320px;
+  height: 320px;
+  */
+  min-height: 320px;
+}
+.card-square > .mdl-card__title {
+  color: #fff;
+}
+
+/*.demo-layout-transparent {
+  background: url(images/sf.jpg) center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  /*color: white;*/
+
+.card-square > .mdl-card__supporting-text {
+  font-size: 14px;
+}
+
+.resume-card-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.resume-card-layout.is-small-screen .resume-card-content {
+  padding: 40px 28px;
+}
+
+.resume-card-content h3 {
+  margin-top: 48px;
+}
+
+.overflow-fab-button {
+  overflow: visible;
+  z-index: 10;
+}
+
+.overflow-fab-button > a > button {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  -webkit-transform: translate(0px, -28px);
+  transform: translate(0px, -28px);
+}
+
+@media screen and (max-width: 850px) {
+  .resume-card-content {
+    padding: 80px 0px;
+  } 
+}

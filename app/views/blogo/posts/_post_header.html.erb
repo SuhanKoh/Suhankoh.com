@@ -1,13 +1,13 @@
 <header>
-  <h1><%= link_to post.title, blogo_post_path(post) %></h1>
+  <h3><%= link_to post.title, blogo_post_path(post) %></h3>
 
   <div class="posted">
     <span>
-      <%= t('blogo.user.post_by') %> <%= post.user.name %>
+      <p><h5><%= t('blogo.user.post_by') %> <%= post.user.name %>
     </span> |
     <span>
       <time datetime="<%= post.published_at %>">
-        <%= I18n.localize(post.published_at.to_date, format: :long) %>
+        <%= I18n.localize(post.published_at.to_date, format: :long) %></h5></p>
       </time>
     </span>
 

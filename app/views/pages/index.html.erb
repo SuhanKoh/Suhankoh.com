@@ -16,13 +16,9 @@
 
   <title>Suhan</title>
   <!-- Bootstrap core CSS -->
-  <!-- <link href="./css/global.css" rel="stylesheet"> -->
   <%= stylesheet_link_tag "global.css" %>
-  <!-- <link href="./css/card.css" rel="stylesheet"> -->
   <%= stylesheet_link_tag "card.css" %>
-    <%= stylesheet_link_tag "projects.css" %>
-
-  <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+  <%= stylesheet_link_tag "projects.css" %>
   <%= stylesheet_link_tag "bootstrap.min.css" %>
 
   <style>
@@ -78,7 +74,7 @@
               <i class="material-icons">file_download</i>
             </button>
           </a>
-          <div class="about-section mdl-card__supporting-text">
+          <div class="about-section mdl-card__supporting-text centering">
             <div class="resume-card-crumbs mdl-color-text--grey-500">
               Suhan &gt; Personal &gt; Résumé
             </div>
@@ -99,7 +95,7 @@
           </div>
           <hr>
 
-          <div class="about-section mdl-card__supporting-text">
+          <div class="about-section mdl-card__supporting-text centering">
             <h3 id="experience">
               Experience
             </h3>
@@ -210,8 +206,8 @@
     </main>
   </div>
 
-<!--   <script type="text/javascript" src="./js/index.js"></script> -->
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <!--   <script type="text/javascript" src="./js/index.js"></script> -->
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

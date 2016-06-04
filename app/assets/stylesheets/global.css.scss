@@ -25,6 +25,9 @@ html, body {
   color: white;
 }
 
+.centering {
+    margin: 0 auto;
+}
 .center {
   margin: auto;
   width: 70%;
@@ -46,6 +49,7 @@ figure img {
   max-height: 100%;
   max-width: 100%;
 }
+
 
 @media screen and (max-width: 1024px) {
   figure {

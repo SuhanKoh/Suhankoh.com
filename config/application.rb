@@ -28,7 +28,7 @@ module Suhan
     Rails.application.config.assets.precompile += %w( cover.css.scss )
     Rails.application.config.assets.precompile += %w( projects.css.scss )
     Rails.application.config.assets.precompile += %w( blog.css.scss )
-
+    Rails.application.config.assets.precompile += %w( ckeditor/* ) 
     Rails.application.config.assets.precompile += %w( bootstrap.min.css )
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 

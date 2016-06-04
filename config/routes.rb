@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  Blogo::Routes.mount_to(self, at: '/blog')
+  # Blogo::Routes.mount_to(self, at: '/blog')
 
   resources :pages
   # The priority is based upon order of creation: first created -> highest priority.

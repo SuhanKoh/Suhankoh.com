@@ -11,10 +11,14 @@
 
   <%= auto_discovery_link_tag :atom, blogo_feed_path %>
   <%= render 'blogo/shared/google_analytics' %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-blue.min.css" />
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
 </head>
 <body>
-  <div id="container">
-    <header class="blogo-header">
+<!--     <header class="blogo-header">
       <div class='header-titles'>
         <h1><%= link_to Blogo.config.site_title, blogo_root_path %></h1>
         <h2><%= Blogo.config.site_subtitle %></h2>
@@ -23,9 +27,63 @@
       <div class='header-icons'>
         <%= render partial: 'blogo/shared/social_icons' %>
       </div>
-    </header>
+    </header> -->
+    <%= stylesheet_link_tag "global.css" %>
+    <%= stylesheet_link_tag "card.css" %>
+    <%= stylesheet_link_tag "projects.css" %>
+    <%= stylesheet_link_tag "projects.css" %>
 
-    <div id="content">
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+
+    <div class="layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+
+          <!-- Title -->
+          <span class="mdl-layout-title">Suhan</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link link_tab" href="#resume"><i class="material-icons">book</i> Résumé</a>
+            <a class="mdl-navigation__link link_tab" href="#projects"><i class="material-icons">computer</i> Projects</a>
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
+            <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
+            <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
+          </nav>
+
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Suhan</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link link_tab" href="#resume"><i class="material-icons">book</i> Résumé</a>
+          <a class="mdl-navigation__link link_tab" href="#projects"><i class="material-icons">computer</i> Projects</a>
+          <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
+          <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
+          <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content content">
+
+        <section class="mdl-layout__tab-panel is-active center resume-card-content" id="resume">
+          <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+            <div class="about-section mdl-card__supporting-text centering">
+              <div class="resume-card-crumbs mdl-color-text--grey-500">
+                Suhan &gt; Personal &gt; Blog
+              </div>
+              <%= yield %>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+
+
+    </div>
+<!--     <div id="content">
       <div class="pure-g-r">
         <div class="pure-u-3-4">
           <%= yield %>
@@ -35,8 +93,7 @@
           <%= render partial: 'blogo/shared/aside' %>
         </div>
       </div>
-    </div>
+    </div> -->
 
-  </div>
-</body>
-</html>
+  </body>
+  </html>

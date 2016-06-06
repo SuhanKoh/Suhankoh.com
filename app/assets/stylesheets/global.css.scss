@@ -15,6 +15,10 @@ html, body {
   background: asset-data-url("sf.jpg") center / cover;
 }
 
+.layout-blog {
+  background: #FAFAFA;
+}
+
 .mdl-layout__drawer {
 /*  background: #64B5F6;
 */}
@@ -68,5 +72,4 @@ figure img {
     margin-top: 0;
     width: auto;
   }
-
 }

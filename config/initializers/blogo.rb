@@ -1,6 +1,7 @@
 Blogo.configure do |config|
   # Edit this to match the subject of your blog
   config.site_title    = 'Suhan'
+  config.site_subtitle = 'Personal Blog about anything'
 
   # Supported languages: :html, :markdown
   config.markup_lang = :html

@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 # Gem for blogo
 # gem 'blogo', '~> 0.1.4'
-gem 'blogo', :git => 'git@github.com:SuhanKoh/blogo.git', :branch => 'code_snippet_plugin'
+gem 'blogo', :git => 'https://github.com/SuhanKoh/blogo.git', :branch => 'code_snippet_plugin'
 
 # Dealing with digest files....
 gem "non-stupid-digest-assets"

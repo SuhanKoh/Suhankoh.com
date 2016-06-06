@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:SuhanKoh/blogo.git
+  remote: https://github.com/SuhanKoh/blogo.git
   revision: d4884364cbd0fb461a4597ee1f105248219f5f53
   branch: code_snippet_plugin
   specs:

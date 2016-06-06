@@ -18,43 +18,21 @@
 
 </head>
 <body>
-<!--     <header class="blogo-header">
-      <div class='header-titles'>
-        <h1><%= link_to Blogo.config.site_title, blogo_root_path %></h1>
-        <h2><%= Blogo.config.site_subtitle %></h2>
-      </div>
+  <%= stylesheet_link_tag "global.css" %>
+  <%= stylesheet_link_tag "card.css" %>
+  <%= stylesheet_link_tag "projects.css" %>
+  <%= stylesheet_link_tag "blog.css" %>
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
 
-      <div class='header-icons'>
-        <%= render partial: 'blogo/shared/social_icons' %>
-      </div>
-    </header> -->
-    <%= stylesheet_link_tag "global.css" %>
-    <%= stylesheet_link_tag "card.css" %>
-    <%= stylesheet_link_tag "projects.css" %>
-    <%= stylesheet_link_tag "blog.css" %>
-    <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <div class="layout-blog mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <header class="mdl-layout__header mdl-layout__header--seamed">
+      <div class="mdl-layout__header-row">
 
-    <div class="layout-blog mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-      <header class="mdl-layout__header mdl-layout__header--seamed">
-        <div class="mdl-layout__header-row">
-
-          <!-- Title -->
-          <span class="mdl-layout-title">Suhan</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <nav class="mdl-navigation">
-            <!-- <a class="mdl-navigation__link link_tab" href="#resume"><i class="material-icons">book</i> Résumé</a> -->
-            <!-- <a class="mdl-navigation__link link_tab" href="#projects"><i class="material-icons">computer</i> Projects</a> -->
-            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
-            <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
-            <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
-          </nav>
-
-        </div>
-      </header>
-      <div class="mdl-layout__drawer">
+        <!-- Title -->
         <span class="mdl-layout-title">Suhan</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
         <nav class="mdl-navigation">
           <!-- <a class="mdl-navigation__link link_tab" href="#resume"><i class="material-icons">book</i> Résumé</a> -->
           <!-- <a class="mdl-navigation__link link_tab" href="#projects"><i class="material-icons">computer</i> Projects</a> -->
@@ -62,38 +40,43 @@
           <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
           <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
         </nav>
+
       </div>
-
-      <main class="mdl-layout__content content">
-        <div class="banner"></div>
-
-        <section class="mdl-layout__tab-panel is-active center resume-card-content" id="resume">
-          <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-            <div class="about-section mdl-card__supporting-text centering">
-              <div class="resume-card-crumbs mdl-color-text--grey-500">
-                Suhan &gt; Personal &gt; Blog
-              </div>
-              <%= yield %>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
-
-
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Suhan</span>
+      <hr>
+      <nav class="mdl-navigation">
+        <!-- <a class="mdl-navigation__link link_tab" href="#resume"><i class="material-icons">book</i> Résumé</a> -->
+        <!-- <a class="mdl-navigation__link link_tab" href="#projects"><i class="material-icons">computer</i> Projects</a> -->
+        <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
+        <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
+        <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
+      </nav>
+      <hr>
+      <span class="mdl-layout-title">Tag</span>
+      <div class="blog-tag">
+        <% @tags.each do |tag| %>
+        <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+        <% end %>
+      </div>
+      <hr>
     </div>
-<!--     <div id="content">
-      <div class="pure-g-r">
-        <div class="pure-u-3-4">
-          <%= yield %>
-        </div>
 
-        <div class="pure-u-1-4">
-          <%= render partial: 'blogo/shared/aside' %>
-        </div>
-      </div>
-    </div> -->
+    <main class="mdl-layout__content content">
+      <div class="banner"></div>
 
-  </body>
-  </html>
+      <section class="mdl-layout__tab-panel is-active center resume-card-content" id="resume">
+        <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+          <div class="about-section mdl-card__supporting-text centering">
+            <div class="resume-card-crumbs mdl-color-text--grey-500">
+              Suhan &gt; Personal &gt; Blog
+            </div>
+            <%= yield %>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

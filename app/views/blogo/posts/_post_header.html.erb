@@ -10,11 +10,6 @@
         <%= I18n.localize(post.published_at.to_date, format: :long) %></h5></p>
       </time>
     </span>
-
-    <div class="article-tags">
-      <% post.tag_names.each do |tag_name| %>
-        <%= link_to tag_name, blogo_tag_path(tag_name), class: 'tag pure-button button-secondary' %>
-      <% end %>
-    </div>
+    
   </div>
 </header>

@@ -14,7 +14,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Gem for blogo
-gem 'blogo', '~> 0.1.4'
+# gem 'blogo', '~> 0.1.4'
+gem 'blogo', :git => 'git@github.com:SuhanKoh/blogo.git', :branch => 'code_snippet_plugin'
+
 # Dealing with digest files....
 gem "non-stupid-digest-assets"
 # Use jquery as the JavaScript library

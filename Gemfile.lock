@@ -1,3 +1,15 @@
+GIT
+  remote: git@github.com:SuhanKoh/blogo.git
+  revision: d4884364cbd0fb461a4597ee1f105248219f5f53
+  branch: code_snippet_plugin
+  specs:
+    blogo (0.1.3)
+      bcrypt (~> 3.0)
+      coffee-rails
+      jquery-rails
+      rails (~> 4.0)
+      sass-rails (>= 4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,12 +52,6 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    blogo (0.1.4)
-      bcrypt (~> 3.0)
-      coffee-rails
-      jquery-rails
-      rails (~> 4.0)
-      sass-rails (>= 4)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.1.1)
@@ -152,7 +158,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blogo (~> 0.1.4)
+  blogo!
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)

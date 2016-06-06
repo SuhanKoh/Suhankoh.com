@@ -1,5 +1,10 @@
 <div id="main">
   <%= render 'blogo/posts/post' %>
+  <div class="blog-tag">
+    <% @tags.each do |tag| %>
+      <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+    <% end %>
+  </div>
   <%= render 'blogo/posts/social_share' %>
   <%= render 'blogo/posts/disqus_comments' %>
 </div>

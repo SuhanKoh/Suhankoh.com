@@ -57,7 +57,7 @@
       <span class="mdl-layout-title">Tag</span>
       <div class="blog-tag">
         <% @tags.each do |tag| %>
-        <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+          <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
         <% end %>
       </div>
       <hr>

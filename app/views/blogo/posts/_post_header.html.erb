@@ -1,8 +1,7 @@
 <header>
-<% 
-if @post_month_year.eql?(post.published_at.strftime("%B %Y"))
+<% if @post_month_year.eql?(post.published_at.strftime("%B %Y"))
   @is_print = false
-else
+elsif !@archives.nil?
   @is_print = true
   @post_month_year = post.published_at.strftime("%B %Y") 
 end

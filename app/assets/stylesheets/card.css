@@ -48,6 +48,19 @@
   transform: translate(0px, -28px);
 }
 
+.overflow-fab-button-left {
+  overflow: visible !important;
+  z-index: 10;
+}
+
+.overflow-fab-button-left > div > a > button {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  -webkit-transform: translate(0px, -28px);
+  transform: translate(0px, -28px);
+}
+
 @media screen and (max-width: 850px) {
   .resume-card-content {
     padding: 80px 0px;

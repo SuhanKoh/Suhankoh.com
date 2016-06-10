@@ -6,3 +6,33 @@
 .social span {
   vertical-align: middle;
 }
+
+.banner {
+  background: #F5F5F5 asset-data-url("sfbanner_640w.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px),
+       screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  .banner {
+    background-image: asset-data-url("sfbanner_1280w.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px),
+       screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px),
+       screen and (min-resolution: 192dpi) and (min-width: 640px) {
+  .banner {
+    background-image: asset-data-url("sfbanner.jpg");
+    background-size: 100% 100%;
+  }
+}

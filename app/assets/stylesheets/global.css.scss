@@ -15,6 +15,10 @@ html, body {
   background: asset-data-url("sf.jpg") center / cover;
 }
 
+.layout-blog {
+  background: #FAFAFA;
+}
+
 .mdl-layout__drawer {
 /*  background: #64B5F6;
 */}
@@ -50,7 +54,6 @@ figure img {
   max-width: 100%;
 }
 
-
 @media screen and (max-width: 1024px) {
   figure {
     width: 200px;
@@ -68,5 +71,4 @@ figure img {
     margin-top: 0;
     width: auto;
   }
-
 }

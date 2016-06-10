@@ -1,5 +1,19 @@
+  <a href="#" onclick="history.go(-1)">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+      <i class="material-icons">arrow_back</i>
+    </button>
+  </a>
 <div id="main">
   <%= render 'blogo/posts/post' %>
+  <div class="blog-tag">
+    <% @tags.each do |tag| %>
+      <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+    <% end %>
+  </div>
   <%= render 'blogo/posts/social_share' %>
   <%= render 'blogo/posts/disqus_comments' %>
 </div>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.4.0/styles/dracula.min.css">
+<script src="//cdn.jsdelivr.net/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

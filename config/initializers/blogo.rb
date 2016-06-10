@@ -1,7 +1,7 @@
 Blogo.configure do |config|
   # Edit this to match the subject of your blog
   config.site_title    = 'Suhan'
-  # config.site_subtitle = 'Mountable blog engine for Ruby on Rails'
+  config.site_subtitle = 'Personal Blog about anything'
 
   # Supported languages: :html, :markdown
   config.markup_lang = :html
@@ -16,7 +16,7 @@ Blogo.configure do |config|
   config.show_rss_icon = true
 
   # Keywords that will be added automatically to every page
-  config.keywords = ["blog"]
+  config.keywords = ["blog", "software", "software development"]
 
   # Do not change this once you installed and ran migrations
   config.table_name_prefix = 'blogo_'
@@ -26,13 +26,12 @@ Blogo.configure do |config|
   #
   config.disqus_shortname = 'suhankoh'
 
-
   # Put GOOGLE ANALYTICS ID here, if you want to use Google Analytics
   #
   # config.google_analytics_id = 'GOOGLE_ID'
 
   # Uncomment and edit if you want to have icon links to github or twitter
   #
-  config.github_username  = 'GITHUB_USERNAME'
-  config.twitter_username = 'TWITTER_USERNAME'
+  config.github_username  = 'suhankoh'
+  config.twitter_username = 'suhankoh'
 end

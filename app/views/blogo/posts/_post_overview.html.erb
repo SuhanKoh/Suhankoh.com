@@ -1,10 +1,20 @@
-<div class="">
+<div>
   <%= render partial: 'blogo/posts/post_header', locals: {post: post} %>
+  <% if @archives.nil? %>
 
-  <div class="content">
-    <%= raw post_overview(post) %> ...
-  </div>
+    <div class="content">
+      <%= raw post_overview(post) %> ...
+    </div>
 
-  <%= link_to t('Read More'), blogo_post_path(post), class: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' %>
+    <%= link_to t('Read More'), blogo_post_path(post), class: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' %>
+
+    <div class="blog-tag">
+      <span>Tag:</span>
+      <% post.tag_names.each do |tag_name| %>
+        <%= link_to tag_name, blogo_tag_path(tag_name), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+      <% end %>
+    </div>
+  <% end %>
   <hr>
+
 </div>

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/SuhanKoh/blogo.git
-  revision: d4884364cbd0fb461a4597ee1f105248219f5f53
+  revision: 5e718b5d2ae6b0df478c818963a6dca67a91d7cf
   branch: code_snippet_plugin
   specs:
     blogo (0.1.3)

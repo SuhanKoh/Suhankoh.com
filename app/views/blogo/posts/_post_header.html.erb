@@ -1,15 +1,28 @@
 <header>
-  <h3><%= link_to post.title, blogo_post_path(post) %></h3>
+<% 
+if @post_month_year.eql?(post.published_at.strftime("%B %Y"))
+  @is_print = false
+else
+  @is_print = true
+  @post_month_year = post.published_at.strftime("%B %Y") 
+end
+%>
+<% if @is_print %>
+  <h2><%= @post_month_year%></h2>
+<% end %>
 
-  <div class="posted">
-    <span>
-      <p><h5><%= t('blogo.user.post_by') %> <%= post.user.name %>
-    </span> |
-    <span>
-      <time datetime="<%= post.published_at %>">
-        <%= I18n.localize(post.published_at.to_date, format: :long) %></h5></p>
-      </time>
-    </span>
-    
-  </div>
+  <h3><%= link_to post.title, blogo_post_path(post) %></h3>
+  <% if @archives.nil? %>
+    <div class="posted">
+      <span>
+        <p><h5><%= t('blogo.user.post_by') %> <%= post.user.name %>
+      </span> |
+      <span>
+        <time datetime="<%= post.published_at %>">
+          <%= I18n.localize(post.published_at.to_date, format: :long) %></h5></p>
+        </time>
+        <%= post.published_at.to_date %>
+      </span>
+    </div> 
+  <% end %>
 </header>

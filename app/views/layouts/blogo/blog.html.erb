@@ -35,6 +35,7 @@
         <!-- Navigation -->
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="http://www.suhankoh.com"><i class="material-icons">home</i> Exit blog</a>
+          <a class="mdl-navigation__link" href="./archives"><i class="material-icons">home</i> Archives</a>
           <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
           <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
           <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
@@ -47,6 +48,7 @@
       <hr>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="http://www.suhankoh.com"><i class="material-icons">home</i> Exit blog</a>
+        <a class="mdl-navigation__link" href="./archives"><i class="material-icons">home</i> Archives</a>
         <a class="mdl-navigation__link" href="https://www.linkedin.com/in/suhankoh"><i class="material-icons">link</i> LinkedIn</a>
         <a class="mdl-navigation__link" href="https://github.com/SuhanKoh"><i class="material-icons">link</i> GitHub</a>
         <a class="mdl-navigation__link" href="mailto:suhankoh+site@gmail.com?Subject=Hello"><i class="material-icons">email</i> Email me</a>
@@ -55,7 +57,7 @@
       <span class="mdl-layout-title">Tag</span>
       <div class="blog-tag">
         <% @tags.each do |tag| %>
-          <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
+        <%= link_to tag.name, blogo_tag_path(tag), class: 'mdl-button mdl-js-button mdl-button--accent' %>
         <% end %>
       </div>
       <hr>

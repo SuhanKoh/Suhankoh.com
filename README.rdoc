@@ -2,4 +2,4 @@
 
 My personal website
 * Started as a static website
-* Currently is running on a Ruby on Rails server
+* Currently is running on a Ruby on Rails server www.Suhankoh.com

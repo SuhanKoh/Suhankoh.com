@@ -19,7 +19,7 @@ Add the gem to Gemfile of you Rails application:
 * Mount the blog routes to you rails application in config/routes.rb
 * Blogo::Routes.mount_to(self, at: '/blog')
 
-== Create a user:(Currently disabled anywhere in production site)
+== Create a user: (Currently disabled anywhere in production site)
 * rake blogo:create_user[user_name,user@email.com,password] NO SPACES
 * rake blogo:create_user\[user_name,user@email.com,password\]
 

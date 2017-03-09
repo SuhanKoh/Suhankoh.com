@@ -4,31 +4,23 @@ My personal website
 * Started as a static website
 * Currently is running on a Ruby on Rails server www.Suhankoh.com
 
-
-Note:
+== Note:
 
 Add the gem to Gemfile of you Rails application:
+* Install the gem:
+* gem 'blogo'
 
-gem 'blogo'
-Install the gem:
+* bundle install
+* Install initializer file:
+* rails generate blogo:install
+* Take a look into config/initializers/blogo.rb and configure what you need.
+* rake blogo:install:migrations
+* rake db:migrate
+* Mount the blog routes to you rails application in config/routes.rb
+* Blogo::Routes.mount_to(self, at: '/blog')
 
-bundle install
-Install initializer file:
-
-rails generate blogo:install
-Take a look into config/initializers/blogo.rb and configure what you need.
-
-Install blogo migrations and run them:
-
-rake blogo:install:migrations
-rake db:migrate
-Create a user:
-
-rake blogo:create_user[user_name,user@email.com,password] NO SPACES
-Mount the blog routes to you rails application in config/routes.rb
-
-Blogo::Routes.mount_to(self, at: '/blog')
+== Create a user:(Currently disabled anywhere in production site)
+* rake blogo:create_user[user_name,user@email.com,password] NO SPACES
+* rake blogo:create_user\[user_name,user@email.com,password\]
 
 If you use zsh and experience a problem to create a user through the rake task, try to escape [ and ] characters:
-
-rake blogo:create_user\[user_name,user@email.com,password\]

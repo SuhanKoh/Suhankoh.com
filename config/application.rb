@@ -31,5 +31,8 @@ module Suhan
     Rails.application.config.assets.precompile += %w( bootstrap.min.css )
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
-end
+    # Adding SSL scheduled update
+    config.middleware.insert_before 0, 'SabayonMiddleware'
+
+  end
 end

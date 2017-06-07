@@ -33,7 +33,7 @@ module Suhan
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
     # Adding SSL scheduled update
-    config.middleware.insert_before 0, 'SabayonMiddleware'
+    # config.middleware.insert_before 0, 'SabayonMiddleware'
 
   end
 end

@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $('.link_tab').click(function(){
     if($('.mdl-layout__tab-panel').hasClass('is-active')){       
-      $('.mdl-layout__tab-panel').removeClass('is-active'); 
+      $('.mdl-layout__tab-panel').removeClass('is-active');
     }
     $($(this).attr('href')).addClass('is-active');
     if($('.mdl-layout__drawer').hasClass('is-visible')){

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   Blogo::Routes.mount_to(self, at: '/blog')
 
   resources :pages
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root '#index'
   root 'pages#index'
+
+  resources :mobileapps
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
